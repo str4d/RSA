@@ -46,6 +46,11 @@ extern crate hex;
 #[cfg(all(test, feature = "serde1"))]
 extern crate serde_test;
 
+extern crate sha1;
+extern crate sha2;
+extern crate sha3;
+extern crate digest;
+
 pub use num_bigint::BigUint;
 
 /// Useful algorithms.
@@ -62,6 +67,7 @@ pub mod padding;
 
 mod key;
 mod pkcs1v15;
+mod oaep;
 
 pub use self::key::{PublicKey, RSAPrivateKey, RSAPublicKey};
 pub use self::padding::PaddingScheme;
