@@ -46,10 +46,6 @@ extern crate hex;
 #[cfg(all(test, feature = "serde1"))]
 extern crate serde_test;
 
-extern crate digest;
-extern crate sha1;
-extern crate sha2;
-extern crate sha3;
 
 pub use num_bigint::BigUint;
 
